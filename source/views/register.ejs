@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jarvis-API</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+			integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<%- include('./id/navigation') %>
+		<main class="container">
+			<div class="row justify-content-center">
+				<div class="card col-md-5 p-5">
+					<form
+						class="row g-3 needs-validation"
+						method="post"
+						action="/api/v1/register"
+					>
+					<div>
+						<label for="firstname" class="form-label">Firstname</label>
+						<input
+							type="text"
+							name="firstname"
+							class="form-control"
+							id="firstname"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="lastname" class="form-label">Lastname</label>
+						<input
+							type="text"
+							name="lastname"
+							class="form-control"
+							id="lastname"
+							required
+						/>
+					</div>
+						<div>
+							<label for="email" class="form-label">Email</label>
+							<input
+								type="email"
+								name="email"
+								class="form-control"
+								id="email"
+								required
+							/>
+						</div>
+						<div>
+							<label for="password1" class="form-label"
+								>Password</label
+							>
+							<input
+								type="password"
+								class="form-control"
+								id="password1"
+								name="password1"
+								required
+							/>
+						</div>
+						<div>
+							<label for="password" class="form-label"
+								>Password Confirmation</label
+							>
+							<input
+								type="password"
+								class="form-control"
+								id="password2"
+								name="password2"
+								required
+							/>
+						</div>
+						<div>
+							<label for="birthday" class="form-label"
+								>Birthday</label
+							>
+							<input
+								type="date"
+								class="form-control"
+								id="birthday"
+								name="birthday"
+								required
+							/>
+						</div>
+						<div>
+							<label for="sexe" class="form-label"
+								>Sexe</label
+							>
+							<select name="sexe" id="sexe" class="form-control">
+								<option selected value="Femme">Femme</option>
+								<option value="Homme">Homme</option>
+							</select>
+						</div>
+						
+						<div class="text-center">
+							<button class="btn btn-primary" type="submit">
+								Inscription
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
