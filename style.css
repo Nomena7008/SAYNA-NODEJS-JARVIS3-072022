@@ -1,0 +1,14 @@
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    font-family:sans-serif;
+}
+center{
+    margin: 0 auto;
+    padding: auto;
+    width: 500px;
+    height: 85px;
+    border: 2px solid goldenrod;
+}
